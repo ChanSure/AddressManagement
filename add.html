@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加联系人</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        // window.onload = function(){
+        //     const addMail = document.getElementsByName("mail");
+        //     const isBtn = document.getElementsByName("subBtn");
+        //     isBtn.onclick = function(){
+        //         const reg = /^\w+@[a-z0-9]+\.[a-z]{2,4}$/;
+        //         if(!reg.test(addMail.value)){
+        //             alert("邮箱格式错误，请重新输入！");
+        //         }
+        //     }
+        // }
+        function mailCheck() {
+            const addMail = document.getElementById("mail");
+            const reg = /^[A-Za-z0-9]+([-_.][A-Za-z0-9]+)*@([A-Za-z0-9]+[-.])+[A-Za-z0-9]{2,5}$/;
+            if(!reg.test(addMail.value) && addMail.value !== ""){
+                addMail.value = "";
+                alert("邮箱格式错误，请重新输入！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--没有圆角的全屏幕-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center">添加联系人</h1>
+        </div>
+    </div>
+    <form>
+        <table class="table table-bordered" style="margin: auto">
+            <tr>
+                <td>姓名</td>
+                <td>
+                    <input type="text" name="name" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>电话</td>
+                <td>
+                    <input type="text" name="phone" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>邮箱</td>
+                <td>
+                    <input type="text" name="mail" id="mail" onblur="mailCheck()" class="form-control" placeholder="邮箱不能以 - _ .以及其它特殊字符开头和结束且域名为2到5个字母">
+                </td>
+            </tr>
+            <tr>
+                <td>住址</td>
+                <td>
+                    <input type="text" name="site" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>QQ号</td>
+                <td>
+                    <input type="text" name="qqNum" class="form-control">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table style="margin: auto">
+            <tr>
+                <td>
+                    <input type="submit" value="保存" name="subBtn" class="btn btn-primary">
+                </td>
+                <td>
+                    <button class="btn btn-danger">
+                        <a href="addresslist.html">取消</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
