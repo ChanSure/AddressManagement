@@ -22,3 +22,4 @@
 `^[A-Za-z0-9]+([-_.][A-Za-z0-9]+)*@([A-Za-z0-9]+[-.])+[A-Za-z0-9]{2,5}$`<br>
 当邮箱输入栏失去焦点时进行校验<br>
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/view_adderr.png" width="720" height="405" align="bottom"><br>
+<br>To be continued...
