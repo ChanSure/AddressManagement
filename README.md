@@ -6,7 +6,8 @@
   * [3.添加新的联系人页面(add.html)](#3----------addhtml-)
 ***
 ### 个人通讯录管理系统Part1
-**注：本次作业三个静态页面都基于Bootstrap架构**
+**注：本次作业三个静态页面都基于Bootstrap**<br>
+目录：AddressManagement/src/main/resources/static/
 #### 0.自定义CSS文件(mystyle.css)
 定义了两个样式表
 #### 1.登录页面(login.html)
