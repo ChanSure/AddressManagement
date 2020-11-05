@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录管理系统</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .container{
+            color: white;
+        }
+        #footer{
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            margin-left: -50px;
+            left: 39%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <div class="container">
+        <br><br>
+        <h1 class="display-4">通讯录</h1>
+    </div>
+    <br>
+    <br>
+    <div id="login-container">
+        <div style="text-align: center">
+            <form>
+                <br><br>
+                <img src="images/b.jpg" alt="头像" width="75" height="75">
+                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <table style="margin: auto">
+                    <tr>
+                        <td>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">账号</span>
+                                </div>
+                                <input name="user" type="text" required autofocus class="form-control">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">密码</span>
+                                </div>
+                                <input name="pwd" id="pwd" type="password" required autofocus class="form-control">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="submit">登录</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <h2 class="h5 mb-5 font-weight-normal">测试用户名：cs0001<br>测试密码：123456</h2>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <footer class="text-muted">
+        <div class="container">
+            <p>通讯录管理系统 作者：陈硕</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
