@@ -4,6 +4,12 @@
   * [1 login page login.html](#1-login-page-loginhtml)
   * [2 main page addresslist.html](#2-main-page-addresslisthtml)
   * [3 add page add.html](#3-add-page-addhtml)
+- [AddressManagement Part2](#addressmanagement-part2)
+  * [1 login](#1-login)
+  * [2 main](#2-main)
+  * [3 add](#3-add)
+  * [4 update](#4-update)
+  * [5 delete](#5-delete)
 ***
 ### AddressManagement Part1
 **注：本次作业三个静态页面都基于Bootstrap**<br>
