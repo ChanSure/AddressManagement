@@ -33,7 +33,7 @@
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/view_adderr.png" width="720" height="405" align="bottom"><br>
 
 ---
-### AddressManagement Part3
+### AddressManagement Part2
 本次作业中，所有数据都通过session模拟。实现了登录，查看，添加，删除，修改功能。<br>
 同时，实现了一个**拦截器**，未登录的时候，所有访问都会被重定向到登录页面。
 #### 1 login
@@ -60,7 +60,7 @@
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/part2-8.png" width="720" height="405" align="bottom"><br>
 
 ---
-### AddressManagement Part2
+### AddressManagement Part3
 #### 1 AJAX
 首先添加电话为13156254899的成员，提示电话不存在重复。
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/web5-1.png" width="720" height="405" align="bottom"><br>
