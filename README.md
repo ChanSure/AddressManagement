@@ -68,6 +68,8 @@
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/web5-2.png" width="720" height="405" align="bottom"><br>
 再次添加相同号码的记录，显示已经存在：
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/web5-3.png" width="720" height="405" align="bottom"><br>
+修改记录同理
+<img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/web5-11.png" width="720" height="405" align="bottom"><br>
 在拦截器中添加判断：
 ```java
 public class LoginInterceptor implements HandlerInterceptor {
