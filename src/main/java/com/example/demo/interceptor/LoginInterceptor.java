@@ -20,6 +20,11 @@ public class LoginInterceptor implements HandlerInterceptor {
         if(request.getRequestURI().endsWith("/login")||request.getRequestURI().endsWith("/loginCheck")){
             return true;
         }
+        if (request.getHeader("x-requested-with") != null && request.getHeader("x-requested-with").equalsIgnoreCase("XMLHttpRequest")) {
+            //如果是ajax请求响应头会有，x-requested-with
+            System.out.print("发生ajax请求...");
+            return true;
+        }
         if(isLogin == null){
             response.sendRedirect(request.getContextPath() + "/login");
             return false;
@@ -38,7 +43,7 @@ class WebConfig implements WebMvcConfigurer{
 
     @Override
     public void addInterceptors(InterceptorRegistry registry){
-        registry.addInterceptor(new LoginInterceptor()).excludePathPatterns("/login**", "/**/*.css",
+        registry.addInterceptor(new LoginInterceptor()).excludePathPatterns("/login**", "/ajax**", "/**/*.css",
                 "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg", "/**/*.gif", "/**/fonts/*");
     }
 }

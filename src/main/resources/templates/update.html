@@ -22,7 +22,8 @@
         <h1 class="display-4" style="text-align: center">修改联系人</h1>
     </div>
 </div>
-<form action="/updateCheck" method="post" th:object="${detail}">
+<form action="/updateCheck" method="post" th:object="${address}" th:action="@{/updateCheck}">
+    <input type="hidden" name="id" value="1" th:value="${address.id}">
     <table class="table table-bordered" style="margin: auto">
         <tr>
             <td>姓名</td>
