@@ -10,7 +10,7 @@
   * [3 add](#3-add)
   * [4 update](#4-update)
   * [5 delete](#5-delete)
-- [AddressManagement Part2](#addressmanagement-part2-1)
+- [AddressManagement Part3](#addressmanagement-part3)
   * [1 AJAX](#1-ajax)
   * [2 JPA](#2-jpa)
 ***
@@ -33,7 +33,7 @@
 <img src="https://cs-picture.oss-cn-qingdao.aliyuncs.com/web/view_adderr.png" width="720" height="405" align="bottom"><br>
 
 ---
-### AddressManagement Part2
+### AddressManagement Part3
 本次作业中，所有数据都通过session模拟。实现了登录，查看，添加，删除，修改功能。<br>
 同时，实现了一个**拦截器**，未登录的时候，所有访问都会被重定向到登录页面。
 #### 1 login
